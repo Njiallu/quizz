@@ -1,7 +1,7 @@
 import type { ReactNode } from "react"
 import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router"
 
-import "@/styles/globals.css"
+import appStyles from "@/styles/globals.css?url"
 
 export const Route = createRootRoute({
   head: () => ({
@@ -15,6 +15,13 @@ export const Route = createRootRoute({
       },
       {
         title: "TanStack Start Starter",
+      },
+    ],
+
+    links: [
+      {
+        rel: "stylesheet",
+        href: appStyles,
       },
     ],
   }),
