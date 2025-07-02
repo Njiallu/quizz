@@ -1,4 +1,7 @@
-/** @type {import('prettier').Config} */
+/**
+ * @see https://prettier.io/docs/configuration
+ * @type {import("prettier").Config}
+ */
 export default {
   useTabs: false,
   quoteProps: "as-needed",
@@ -44,4 +47,4 @@ export default {
   importOrderMergeDuplicateImports: true,
   importOrderCombineTypeAndValueImports: true,
   plugins: ["@ianvs/prettier-plugin-sort-imports"],
-};
+}
